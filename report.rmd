@@ -8,7 +8,6 @@ output: pdf_document
 knitr::opts_chunk$set(echo=F)
 ```
 
-
 ## Summary
 Analyse cars data to detect if some difference exists between gaz consumption of manual cars, or automatic ones.
 
@@ -150,7 +149,6 @@ text(x=2, 6.5, labels = paste("", sum(mtcars$wt <= 3.5), " cars"), cex=0.7)
 text(x=5, 6.5, labels = paste("", sum(mtcars$wt > 3.5), " cars"), cex=0.7)
 ```
 
-
 <a name="fig-4"></a>
 ```{r}
 plot(fit.wt.qsec.am.int, which=1)
@@ -158,8 +156,6 @@ text(10.5, 4.2, paste("mean: ", format(mean(resid(fit.wt.qsec.am.int)), digits=3
 text(10.5, 3.4, paste("sd: ", format(sd(resid(fit.wt.qsec.am.int)), digits=3)), cex=1, col="blue", pos=4)
 title(main="Linear regression mpg ~ am*wt + qsec")
 ```
-
-
 
 ```{r}
 plot(fit.wt.qsec.am.int, which=2)
