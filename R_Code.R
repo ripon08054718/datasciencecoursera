@@ -84,7 +84,6 @@ plot(fit.wt.qsec.am.int)
 anova(fit.wt.qsec.am, fit.wt.qsec.am.int)
 # including the interaction sounds good and significant
 
-
 #let's look at the vif
 vif(fit.wt.qsec.am.int)
 vif(fit.wt.qsec.am)
